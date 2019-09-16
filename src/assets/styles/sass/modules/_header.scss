@@ -1,0 +1,39 @@
+.site__header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.25rem;
+
+  @include breakpoint(up, lg) {
+    padding: 2rem;
+  }
+
+  .menu__open & {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &-logo {
+    a {
+      color: var(--mainColor);
+      text-decoration: none;
+    }
+  }
+
+  &-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      color: var(--mainColor);
+      line-height: normal;
+      text-decoration: none;
+
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
