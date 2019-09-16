@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import "../assets/styles/sass/styles.scss"
 
@@ -10,8 +11,8 @@ const Header = ({ siteTitle }) => (
       <Link to="/">{ siteTitle } &mdash;</Link>
     </div>
     <nav className="site__header-nav">
-      <Link to="/">Home</Link>
-      <Link to="/posts">Posts</Link>
+      <AniLink paintDrip to="/">Home</AniLink>
+      <AniLink paintDrip to="/posts">Posts</AniLink>
     </nav>
   </header>
 )
