@@ -13,6 +13,8 @@ const IndexPage = () => (
     <p>I'm a frontend web developer from Melbourne currently working at studio chriate.</p>
     <p>i build beautiful pixel perfect wordpress websites.</p>
     </div>
+    <h2>Latest Posts</h2>
+    POSTS
   </Layout>
 )
 
