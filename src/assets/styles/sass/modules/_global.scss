@@ -1,5 +1,4 @@
-  @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://rsms.me/inter/inter.css');
 
 body,
 html {
@@ -8,10 +7,10 @@ html {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-  font-family: 'Karla', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   color: var(--mainColor);
 }
@@ -30,13 +29,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .container {
-  max-width: 960px;
   padding: 0 25px;
   margin: 0 auto;
+  max-width: 95vw;
+
+  @include breakpoint(up, lg) {
+    max-width: 65vw;
+  }
 }
 
 a {
@@ -50,6 +53,8 @@ a {
 }
 
 .page__hero {
+  background: var(--mainColor);
+  color: var(--whiteColor);
   padding: 7.5vw 0;
 
   img {

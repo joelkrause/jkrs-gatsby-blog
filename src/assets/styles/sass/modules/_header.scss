@@ -1,12 +1,15 @@
 .site__header {
-  background: #fff;
-  display: flex;
-  align-items: center;
+  background: var(--mainColor);
   padding: 1rem;
   font-size: 1.25rem;
 
   @include breakpoint(up, lg) {
     padding: 2rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
   }
 
   .menu__open & {
@@ -16,8 +19,9 @@
 
   &-logo {
     a {
-      color: var(--mainColor);
+      color: var(--whiteColor);
       text-decoration: none;
+      font-weight: 500;
     }
   }
 
@@ -27,7 +31,7 @@
     justify-content: flex-end;
 
     a {
-      color: var(--mainColor);
+      color: var(--whiteColor);
       line-height: normal;
       text-decoration: none;
 
