@@ -34,7 +34,6 @@ html {
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
   font-family: 'Space';
-  // font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   font-size: 1.25rem;
@@ -80,8 +79,8 @@ a {
 }
 
 .page__hero {
-  background: var(--mainColor);
-  color: var(--whiteColor);
+  // background: var(--mainColor);
+  color: var(--mainColor);
   padding: 15vw 0;
 
   h1 {
