@@ -2,7 +2,6 @@
   padding: 1rem;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
 
   @include breakpoint(up, lg) {
     padding: 2rem;
