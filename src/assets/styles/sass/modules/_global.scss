@@ -1,5 +1,33 @@
 @import url('https://rsms.me/inter/inter.css');
 
+@font-face {
+  font-family: 'Space';
+  src: url('../../fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+    url('../../fonts/SpaceGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Space';
+  src: url('../../fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+    url('../../fonts/SpaceGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Space';
+  src: url('../../fonts/SpaceGrotesk-SemiBold.woff2') format('woff2'),
+    url('../../fonts/SpaceGrotesk-SemiBold.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Space';
+  src: url('../../fonts/SpaceGrotesk-Bold.woff2') format('woff2'),
+    url('../../fonts/SpaceGrotesk-Bold.woff') format('woff');
+  font-weight: 700;
+}
+
 body,
 html {
   text-rendering: optimizeLegibility;
@@ -7,7 +35,8 @@ html {
   font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
   text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
-  font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Space';
+  // font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   font-size: 1.125rem;
@@ -29,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .container {
@@ -55,7 +84,11 @@ a {
 .page__hero {
   background: var(--mainColor);
   color: var(--whiteColor);
-  padding: 10vw 0;
+  padding: 15vw 0;
+
+  h1 {
+    font-weight: 500;
+  }
 
   img {
     &.profile_image {

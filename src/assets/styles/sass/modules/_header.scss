@@ -1,15 +1,15 @@
 .site__header {
-  background: var(--mainColor);
   padding: 1rem;
-  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
 
   @include breakpoint(up, lg) {
     padding: 2rem;
-  }
-
-  .container {
-    display: flex;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 
   .menu__open & {

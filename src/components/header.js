@@ -6,7 +6,6 @@ import "../assets/styles/sass/styles.scss"
 
 const Header = ({ siteTitle }) => (
   <header className="site__header">
-    <div className="container">
     <div className="site__header-logo">
       <Link to="/">{ siteTitle } &mdash;</Link>
     </div>
@@ -14,7 +13,6 @@ const Header = ({ siteTitle }) => (
       <Link to="/">Home</Link>
       <Link to="/posts">Posts</Link>
     </nav>
-    </div>
   </header>
 )
 
