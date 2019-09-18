@@ -81,7 +81,13 @@ a {
 .page__hero {
   // background: var(--mainColor);
   color: var(--mainColor);
-  padding: 15vw 0;
+  padding: 12.5vw 0;
+
+  .gatsby-image-wrapper {
+    width: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 
   h1 {
     font-weight: 500;
