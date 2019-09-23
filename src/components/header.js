@@ -7,7 +7,7 @@ import "../assets/styles/sass/styles.scss"
 const Header = ({ siteTitle }) => (
   <header className="site__header">
     <div className="site__header-logo">
-      <Link to="/">{ siteTitle } &mdash;</Link>
+      <Link to="/">J<span>oel Krause</span> &mdash;</Link>
     </div>
     <nav className="site__header-nav">
       <Link to="/">Home</Link>

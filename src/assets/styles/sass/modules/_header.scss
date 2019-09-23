@@ -1,14 +1,14 @@
 .site__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 1rem;
   display: flex;
   align-items: center;
 
   @include breakpoint(up, lg) {
     padding: 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
   }
 
   .menu__open & {
@@ -21,6 +21,13 @@
       color: var(--whiteColor);
       text-decoration: none;
       font-weight: 500;
+    }
+
+    &.hide {
+      span {
+        margin-left: -100px;
+        opacity: 0;
+      }
     }
   }
 
